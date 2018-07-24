@@ -15,6 +15,7 @@
 package cmd
 
 import (
+	"errors"
 	"fmt"
 	"os"
 	"strings"
@@ -59,6 +60,10 @@ Search accepts a list of words as options.`,
 			}
 		} else {
 			matchNames = names
+		}
+
+		if len(matchNames) == 0 {
+			return errors.New("No plugins found")
 		}
 
 		rowPattern := "%s\t%s\t%s\n"
