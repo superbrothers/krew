@@ -23,7 +23,7 @@ import (
 var rootCmd = &cobra.Command{
 	Use: "root",
 	RunE: func(cmd *cobra.Command, args []string) error {
-		fmt.Println(paths.BinPath())
+		fmt.Println(paths.BasePath())
 
 		return nil
 	},
