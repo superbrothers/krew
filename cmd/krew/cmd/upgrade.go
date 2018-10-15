@@ -76,5 +76,5 @@ kubectl plugin upgrade foo bar"`,
 }
 
 func init() {
-	rootCmd.AddCommand(upgradeCmd)
+	krewCmd.AddCommand(upgradeCmd)
 }

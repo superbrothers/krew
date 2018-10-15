@@ -95,5 +95,5 @@ func limitString(s string, length int) string {
 }
 
 func init() {
-	rootCmd.AddCommand(searchCmd)
+	krewCmd.AddCommand(searchCmd)
 }

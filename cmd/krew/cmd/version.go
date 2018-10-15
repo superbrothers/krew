@@ -52,5 +52,5 @@ DownloadPath is the path used to store download binaries.`,
 }
 
 func init() {
-	rootCmd.AddCommand(versionCmd)
+	krewCmd.AddCommand(versionCmd)
 }

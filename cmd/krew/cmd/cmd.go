@@ -34,8 +34,8 @@ var (
 	krewExecutedVersion string            // resolved version of krew
 )
 
-// rootCmd represents the base command when called without any subcommands
-var rootCmd = &cobra.Command{
+// krewCmd represents the base command when called without any subcommands
+var krewCmd = &cobra.Command{
 	Use:   "krew",
 	Short: "krew is the kubectl plugin manager",
 	Long: `krew is the kubectl plugin manager.
@@ -45,9 +45,9 @@ You can invoke krew through kubectl with: "kubectl plugin [krew] option..."`,
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
-// This is called by main.main(). It only needs to happen once to the rootCmd.
+// This is called by main.main(). It only needs to happen once to the krewCmd.
 func Execute() {
-	if err := rootCmd.Execute(); err != nil {
+	if err := krewCmd.Execute(); err != nil {
 		if glog.V(1) {
 			glog.Fatalf("%+v", err) // with stack trace
 		} else {

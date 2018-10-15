@@ -138,5 +138,5 @@ All plugins will be downloaded and made available to: "kubectl plugin <name>"`,
 	manifest = installCmd.Flags().String("manifest", "", "(Development-only) specify plugin manifest directly.")
 	forceDownloadFile = installCmd.Flags().String("archive", "", "(Development-only) force all downloads to use the specified file")
 
-	rootCmd.AddCommand(installCmd)
+	krewCmd.AddCommand(installCmd)
 }

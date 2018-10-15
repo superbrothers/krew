@@ -93,5 +93,5 @@ func prepCaveats(s string) string {
 }
 
 func init() {
-	rootCmd.AddCommand(infoCmd)
+	krewCmd.AddCommand(infoCmd)
 }

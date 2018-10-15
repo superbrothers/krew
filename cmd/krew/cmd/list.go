@@ -62,7 +62,7 @@ Plugins will be shown as "PLUGIN,VERSION"`,
 		PreRunE: checkIndex,
 	}
 
-	rootCmd.AddCommand(listCmd)
+	krewCmd.AddCommand(listCmd)
 }
 
 func printTable(out io.Writer, columns []string, rows [][]string) error {

@@ -46,5 +46,5 @@ func ensureUpdated(_ *cobra.Command, _ []string) error {
 }
 
 func init() {
-	rootCmd.AddCommand(updateCmd)
+	krewCmd.AddCommand(updateCmd)
 }

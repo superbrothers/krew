@@ -46,5 +46,5 @@ This will delete all plugin related files.`,
 }
 
 func init() {
-	rootCmd.AddCommand(removeCmd)
+	krewCmd.AddCommand(removeCmd)
 }
