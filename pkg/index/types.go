@@ -33,6 +33,9 @@ type PluginSpec struct {
 	ShortDescription string `json:"shortDescription,omitempty"`
 	Description      string `json:"description,omitempty"`
 	Caveats          string `json:"caveats,omitempty"`
+	Homepage         string `json:"homepage,omitempty"`
+	License          string `json:"license,omitempty"`
+	Author           string `json:"author,omitempty"`
 
 	Platforms []Platform `json:"platforms,omitempty"`
 }

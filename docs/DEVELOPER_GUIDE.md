@@ -109,6 +109,9 @@ spec:
       to: "."               # '.' refers to the root of plugin install directory
     bin: "./kubectl-foo"  # path to the plugin executable after copying files above
   shortDescription: Prints the environment variables.
+  homepage: https://github.com/GoogleContainerTools/krew #optional, project homepage
+  license: Apache-2.0 #optional, license such as Apache-2.0 or MIT
+  Author: https://github.com/ahmetb #optional, project author
   # (optional) use caveats field to show post-installation recommendations
   caveats: |
     This plugin needs the following programs:
